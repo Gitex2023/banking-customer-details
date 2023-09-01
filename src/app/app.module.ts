@@ -1,10 +1,11 @@
-import { NgModule } from '@angular/core';
+import { Injector, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 import { HttpClientModule } from "@angular/common/http";
+import { createCustomElement } from "@angular/elements";
 
 @NgModule({
   declarations: [
@@ -18,5 +19,14 @@ import { HttpClientModule } from "@angular/common/http";
   ],
   providers: [],
   bootstrap: [AppComponent]
+  // entryComponents: [CustomerDetailsComponent],
 })
-export class AppModule { }
+export class AppModule {
+  // constructor(private injector: Injector) {
+  //   const componentElement = createCustomElement(CustomerDetailsComponent, {
+  //     injector,
+  //   });
+  //   customElements.define("app-banking-customer-widget", componentElement);
+  // }
+  // ngDoBootstrap() {}
+ }

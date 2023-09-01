@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { HttpService } from '../services/http.service';
 import { Observable } from 'rxjs';
 import { HttpHeaders } from '@angular/common/http';
@@ -6,7 +6,9 @@ import { HttpHeaders } from '@angular/common/http';
 @Component({
   selector: 'app-customer-details',
   templateUrl: './customer-details.component.html',
-  styleUrls: ['./customer-details.component.css']
+  styleUrls: ['./customer-details.component.css'],
+  encapsulation: ViewEncapsulation.Emulated,
+
 })
 export class CustomerDetailsComponent {
 
