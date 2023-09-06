@@ -18,15 +18,15 @@ import { createCustomElement } from "@angular/elements";
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
-  // entryComponents: [CustomerDetailsComponent],
+  // bootstrap: [AppComponent]
+  entryComponents: [CustomerDetailsComponent],
 })
 export class AppModule {
-  // constructor(private injector: Injector) {
-  //   const componentElement = createCustomElement(CustomerDetailsComponent, {
-  //     injector,
-  //   });
-  //   customElements.define("app-banking-customer-widget", componentElement);
-  // }
-  // ngDoBootstrap() {}
+  constructor(private injector: Injector) {
+    const componentElement = createCustomElement(CustomerDetailsComponent, {
+      injector,
+    });
+    customElements.define('app-journey-auth', componentElement);
+  }
+  ngDoBootstrap() {}
  }

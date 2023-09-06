@@ -1,0 +1,10 @@
+{
+  "name": "Customer Widget",
+  "description": "Customer Widget",
+  "tags": ["widget", "demo", "api"],
+  "version": "1.0.0",
+  "element": "<app-banking-customer-widget></app-banking-customer-widget>",
+  "icon": "neo-icon-sort",
+  "files": ["/elements/index.js", "/elements/styles.css"],
+  "override_url": "https://banking-customer.lab.bravishma.com"
+}
